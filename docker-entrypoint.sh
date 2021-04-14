@@ -8,6 +8,13 @@ PASSWD=${PASSWD:-${DEFAULT_PASSWD}}
 
 unset DEFAULT_USER DEFAULT_PASSWD
 
+# Overwrite
+USER_ID=1000
+GROUP_ID=1000
+USER="guest"
+GROUP="guest"
+PASSWD="guest"
+
 # Add group
 echo "GROUP_ID: $GROUP_ID"
 if [[ $GROUP_ID != "0" && ! $(getent group $GROUP) ]]; then
