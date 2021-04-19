@@ -34,7 +34,7 @@ sudo chmod u-s /usr/sbin/groupadd
 
 if (( $# == 0 )); then
     # Set login user name
-    USER=$(whoami)
+    # USER=$(whoami)
     echo "USER: $USER"
 
     # Set login password
